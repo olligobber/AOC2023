@@ -2,7 +2,7 @@
 # first command line argument is the current day
 
 # Check if the directory already exists
-if [ -d "Day$1" ]; then 
+if [ -d "Day$1" ]; then
     echo "Directory for day $1 already exists!"
     exit 1
 fi
@@ -19,6 +19,5 @@ cp "Template/Template.hs" "Day$1/app/Part2.hs"
 # Go into the directory
 cd "Day$1"
 
-# build cabal
+# Build cabal
 cabal build
-
