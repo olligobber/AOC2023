@@ -1,9 +1,9 @@
-cabal-version:      2.4
-name:               AOC2023Day01
-version:            0.1.0.0
+cabal-version: 2.4
+name: AOC2023Day01
+version: 0.1.0.0
 
-author:             olligobber
-maintainer:         sirolligobbervii@yahoo.com.au
+author: olligobber
+maintainer: sirolligobbervii@yahoo.com.au
 
 common shared-properties
 	default-language: Haskell2010
@@ -22,27 +22,27 @@ common shared-properties
 		-Wno-tabs
 
 executable Part1
-    import:           shared-properties
-    main-is:          Part1.hs
+	import: shared-properties
+	main-is: Part1.hs
 
-    build-depends: 
-          base ^>= 4.15
+	build-depends:
+		  base ^>= 4.15
 		-- , text ^>= 2.1
 		-- , containers ^>= 0.7
 		-- , mtl ^>= 2.2
 		-- , parsec ^>= 3.1
-    hs-source-dirs:   app
-    default-language: Haskell2010
+	hs-source-dirs: app
+	default-language: Haskell2010
 
 executable Part2
-    import:           shared-properties
-    main-is:          Part2.hs
+	import: shared-properties
+	main-is: Part2.hs
 
-    build-depends: 
-          base ^>= 4.15
+	build-depends:
+		  base ^>= 4.15
 		-- , text ^>= 2.1
 		-- , containers ^>= 0.7
 		-- , mtl ^>= 2.2
 		-- , parsec ^>= 3.1
-    hs-source-dirs:   app
-    default-language: Haskell2010
+	hs-source-dirs: app
+	default-language: Haskell2010
