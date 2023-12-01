@@ -44,7 +44,7 @@ fi
 
 # Download the input file
 cookie=$(cat ../session_cookie)
-timeuntil=$(expr `date -d "TZ=\"EST\" December $today 12am" +%s` - `date +%s`)
+timeuntil=$(($(date -d "TZ=\"EST\" December $today 12am" +%s) - $(date +%s)))
 if [ $timeuntil -gt 0 ]; then
 	echo "Waiting until $localunlocktime to download input"
 	sleep "$timeuntil"s
