@@ -36,7 +36,7 @@ fi
 if [ -f "Part2.hs" ]; then
 	echo "  Source for part 2 already exists!"
 else
-	cp "Template/Template.hs" "Day$today/Part2.hs"
+	cp "../Template/Template.hs" "Day$today/Part2.hs"
 fi
 
 echo "Starting cabal build, this may take a moment"
