@@ -32,7 +32,6 @@ executable Part1
 		-- , containers ^>= 0.7
 		-- , mtl ^>= 2.2
 		-- , parsec ^>= 3.1
-	hs-source-dirs: app
 	default-language: Haskell2010
 
 executable Part2
@@ -46,5 +45,4 @@ executable Part2
 		-- , containers ^>= 0.7
 		-- , mtl ^>= 2.2
 		-- , parsec ^>= 3.1
-	hs-source-dirs: app
 	default-language: Haskell2010
