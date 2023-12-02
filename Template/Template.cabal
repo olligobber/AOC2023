@@ -27,6 +27,7 @@ executable Part1
 
 	build-depends:
 		  base ^>= 4.15
+		-- , split ^>= 0.2.4
 		-- , text ^>= 2.1
 		-- , containers ^>= 0.7
 		-- , mtl ^>= 2.2
@@ -40,6 +41,7 @@ executable Part2
 
 	build-depends:
 		  base ^>= 4.15
+		-- , split ^>= 0.2.4
 		-- , text ^>= 2.1
 		-- , containers ^>= 0.7
 		-- , mtl ^>= 2.2
