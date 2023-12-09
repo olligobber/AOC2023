@@ -40,7 +40,7 @@ cd "Day$today"
 if [ -f "Day$today.cabal" ]; then
 	echo "  Cabal file already exists!"
 else
-	sed "s/Day/Day$today/g" < "../Template/Template.cabal" > "Day$today.cabal"
+	cat "../Template/Template.cabal" | sed "s/Day/Day$today/g" | sed "s/Year/$year/g" > "Day$today.cabal"
 fi
 if [ -f "Part1.hs" ]; then
 	echo "  Source for part 1 already exists!"
