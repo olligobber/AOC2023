@@ -16,6 +16,7 @@ followUntilEndsZ m (d:ds) s = 1 + followUntilEndsZ m ds (follow m d s)
 
 followAllUntilEndsZ :: Connections -> [Direction] -> [String] -> Integer 
 followAllUntilEndsZ c d ss = foldl1 lcm $ followUntilEndsZ c d <$> ss 
+-- I just realised, this shouldn't work, but it does for my input
 
 parseDirection :: Char -> Direction 
 parseDirection 'L' = Left 
